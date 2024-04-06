@@ -98,11 +98,8 @@
 /* Recommendations */
 .recommendations{
     width: 100%;
-    background: var(--color-one);   
-}
-
-.recommendations-format{
-    margin: 3rem 5.8rem;
+    background: var(--color-one);
+    padding: 3rem 5.8rem; 
 }
 
 .recommendations__title{
@@ -144,4 +141,69 @@
 .card__content:hover{
     transform: scale(1.02);
     opacity: .8;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background: var(--color-two);
+    padding: 3rem 0rem 2rem 13rem;
+}
+
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: .625rem;
+    padding-right: 3rem;
+}
+
+.footer__item--title{
+    color: var(--color-three);
+    font-size: 1.4rem;
+}
+
+.footer__item--text{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 1.25rem;
+    margin-top: .625rem;
+}
+
+.footer__item--text--format{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-right: 1.25rem;
+}
+
+.footer__item--text--subtitle{
+    font-size: .6rem;
+    color: var(--color-four);
+    font-weight: 400;
+}
+
+.footer__item--text--info{
+    color: var(--color-three);
+    font-size: .9rem;
+    font-weight: 200;
+    margin-top: .625rem;
+    text-decoration: none;
+}
+
+.footer__item--icon {
+    margin-top: 1.25rem;
+}
+
+.footer__item--icon > a {
+    text-decoration: none;
+}
+
+.footer__item--icon > a img{
+    height: 1.4rem;
+    margin-right: 1.875rem; 
 }
