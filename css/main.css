@@ -8,7 +8,8 @@
     width: 100%;
     align-items: center;
     position: sticky;
-    top: 0;  
+    top: 0;
+    z-index: 100;
 }
 
 .navigation__title{
@@ -46,8 +47,12 @@
 /* Header */
 .header{
     width: 100%;
-    background: var(--color-two);   
+    background: var(--color-two); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
+
 .header-format{
     display: flex;
     justify-content: space-between;
@@ -88,4 +93,55 @@
 .hero__image{
     width: 40%;
     margin-left: 3rem;
+}
+
+/* Recommendations */
+.recommendations{
+    width: 100%;
+    background: var(--color-one);   
+}
+
+.recommendations-format{
+    margin: 3rem 5.8rem;
+}
+
+.recommendations__title{
+    font-size: 1.4rem;
+    color: var(--color-three);
+}
+
+.recommendations__cards{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+
+.card__content {
+    display: flex;
+    margin: 2rem 1.1rem;
+    border: 0.063rem solid rgba(0,0,0,.25);
+    border-radius: 0.313rem;
+    box-shadow: 0rem 0.125rem 0.375rem 0rem rgba(0,0,0,.25);
+    position: relative;
+    transition: all .3s cubic-bezier(.5,0,.5,1);
+    overflow: hidden;
+}
+
+.card__content--img {
+    max-width: 16rem;
+}
+
+.card__content--text {
+    position: absolute;
+    color: var(--color-one);
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    font-size: 1.35rem;
+    padding: 1rem 1.2rem;
+}
+
+.card__content:hover{
+    transform: scale(1.02);
+    opacity: .8;
 }
