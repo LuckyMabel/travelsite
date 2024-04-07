@@ -149,7 +149,8 @@
     width: 100%;
     flex-wrap: wrap;
     background: var(--color-two);
-    padding: 3rem 0rem 2rem 13rem;
+    padding: 3rem 8rem 3rem 13rem;
+    justify-content: space-between;
 }
 
 .footer__item{
@@ -174,20 +175,20 @@
     margin-top: .625rem;
 }
 
-.footer__item--text--format{
+.footer__item--text-format{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     margin-right: 1.25rem;
 }
 
-.footer__item--text--subtitle{
+.footer__item--text-subtitle{
     font-size: .6rem;
     color: var(--color-four);
     font-weight: 400;
 }
 
-.footer__item--text--info{
+.footer__item--text-info{
     color: var(--color-three);
     font-size: .9rem;
     font-weight: 200;
