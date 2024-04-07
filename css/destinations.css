@@ -8,6 +8,10 @@
     background-image: url(../assets/hawaii.jpg);
 }
 
+.destination-greece{
+    background-image: url(../assets/greece.jpg);
+}
+
 .schedule {
     display: flex;
     flex-direction: column;
