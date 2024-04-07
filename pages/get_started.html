@@ -3,61 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Site</title>
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/destinations.css" />  
+    <title>Travel Site - Get Started</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/get_started.css" />
 </head>
 
 <body>
     <main>
         <nav class="navigation">
-            <a href="./index.html" class="navigation__title">Travel Site</a>
+            <a href="../index.html" class="navigation__title">Travel Site</a>
             <ul class="navigation__list">
                 <li>
-                    <a href="./index.html" class="navigation__list--item current">Home</a>
+                    <a href="../index.html" class="navigation__list--item current">Home</a>
                 </li>
                 <li>
-                    <a href="./pages/hawaii.html" class="navigation__list--item">Hawaii</a>
+                    <a href="../pages/hawaii.html" class="navigation__list--item">Hawaii</a>
                 </li>
                 <li>
-                    <a href="./pages/iceland.html" class="navigation__list--item">Iceland</a>
+                    <a href="../pages/iceland.html" class="navigation__list--item">Iceland</a>
                 </li>
                 <li>
-                    <a href="./pages/greece.html" class="navigation__list--item">Greece</a>
+                    <a href="../pages/greece.html" class="navigation__list--item">Greece</a>
                 </li>
             </ul>
         </nav>
 
-        <header class="header">
-            <div class="header-format">
-                <div class="header__content">
-                    <h1 class="header__content--title">Travelling Comes With Endless Discoveries</h1>
-                    <p class="header__content--text">Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-                    <a href="./pages/get_started.html"><button class="header__content--button">Get started</button></a>
+        <section class="form">
+            <div class="form-format">
+                <div class="form__content">
+                    <h1 class="form__content--title">Get Started!</h1>
+                    <form class="form__layout">
+                        <div class="form__question">
+                            <label for="name">Name: </label>
+                            <input name="name" id="name" type="text" autocomplete="name" required>
+                        </div>
+                        <div class="form__question">
+                            <label for="email">Email: </label>
+                            <input name="email" id="email" type="email" autocomplete="off" required>
+                        </div>
+                        <div class="form__question">
+                            <label for="destination">Destination</label>
+                            <select class="form__question--select" name="destination" id="destination">
+                                <option  value="hawaii">Hawaii</option>
+                                <option value="iceland">Iceland</option>
+                                <option value="greece">Greece</option>
+                            </select>
+                        </div>
+                        <button class="form__format--button">Sign-up</button>
+                    </form>
                 </div>
-                <img class="hero__image" src="./assets/hero.png" alt="hero_image">
-            </div>
-        </header>
-
-        <section class="recommendations">
-            <h1 class="recommendations__title">Recommendations</h1>
-            <div class="recommendations__cards">
-                <a href="./pages/hawaii.html" class="card__content">
-                    <img class="card__content--img" src="./assets/hawaii.jpg" alt="Hawaii">
-                    <h2 class="card__content--text">Hawaii</h2>
-                </a>
-                <a href="./pages/iceland.html" class="card__content">
-                    <img class="card__content--img" src="./assets/iceland.jpg" alt="Iceland">
-                    <h2 class="card__content--text">Iceland</h2>
-                </a>
-                <a href="./pages/greece.html" class="card__content">
-                    <img class="card__content--img" src="./assets/greece.jpg" alt="Greece">
-                    <h2 class="card__content--text">Greece</h2>
-                </a>
+                <img class="hero__image" src="../assets/hero.png" alt="hero image">
             </div>
         </section>
-
+            
         <footer>
             <div class="footer">
                 <div class="footer__item">
@@ -88,18 +87,18 @@
                     <h2 class="footer__item--title">Social</h2>
                     <div class="footer__item--icon">
                         <a href="https://www.instagram.com">
-                            <img src="./assets/icon-instagram.png" alt="instagram">   
+                            <img src="../assets/icon-instagram.png" alt="instagram">   
                         </a>
                         <a href="https://www.facebook.com">
-                            <img src="./assets/icon-facebook.png" alt="facebook">   
+                            <img src="../assets/icon-facebook.png" alt="facebook">   
                         </a>
                         <a href="https://www.twitter.com">
-                            <img src="./assets/icon-twitter.png" alt="twitter">   
+                            <img src="../assets/icon-twitter.png" alt="twitter">   
                         </a>
                     </div>
                 </div>
             </div>
         </footer>
-    </main>   
+    </main> 
 </body>
 </html>
